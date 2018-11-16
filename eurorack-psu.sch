@@ -1,0 +1,719 @@
+EESchema Schematic File Version 4
+LIBS:eurorack-psu-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:CP C1
+U 1 1 5BDE69FC
+P 4500 2590
+F 0 "C1" H 4618 2636 50  0000 L CNN
+F 1 "2200µF" H 4500 2500 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D16.0mm_P7.50mm" H 4538 2440 50  0001 C CNN
+F 3 "~" H 4500 2590 50  0001 C CNN
+	1    4500 2590
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C3
+U 1 1 5BDE6B22
+P 4910 2590
+F 0 "C3" H 5028 2636 50  0000 L CNN
+F 1 "2200µF" H 4910 2500 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D16.0mm_P7.50mm" H 4948 2440 50  0001 C CNN
+F 3 "~" H 4910 2590 50  0001 C CNN
+	1    4910 2590
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D5
+U 1 1 5BDE6C8C
+P 5930 1300
+F 0 "D5" H 5930 1390 50  0000 C CNN
+F 1 "1N4007" H 5930 1210 50  0000 C CNN
+F 2 "Diodes_ThroughHole:D_DO-35_SOD27_P2.54mm_Vertical_KathodeUp" H 5930 1300 50  0001 C CNN
+F 3 "~" H 5930 1300 50  0001 C CNN
+	1    5930 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D6
+U 1 1 5BDE6CD5
+P 5930 4370
+F 0 "D6" H 5930 4460 50  0000 C CNN
+F 1 "1N4007" H 5930 4270 50  0000 C CNN
+F 2 "Diodes_ThroughHole:D_DO-35_SOD27_P2.54mm_Vertical_KathodeUp" H 5930 4370 50  0001 C CNN
+F 3 "~" H 5930 4370 50  0001 C CNN
+	1    5930 4370
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM317_3PinPackage U1
+U 1 1 5BDE6DC1
+P 5930 1670
+F 0 "U1" H 5780 1790 50  0000 C CNN
+F 1 "LM317" H 6020 1790 50  0000 C CNN
+F 2 "Power_Integrations:TO-220" H 5930 1920 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm317.pdf" H 5930 1670 50  0001 C CNN
+	1    5930 1670
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM337_TO220 U2
+U 1 1 5BDE6EAE
+P 5930 4010
+F 0 "U2" H 5780 3890 50  0000 C CNN
+F 1 "LM337" H 6020 3890 50  0000 C CNN
+F 2 "Power_Integrations:TO-220" H 5930 3810 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm337-n.pdf" H 5930 4010 50  0001 C CNN
+	1    5930 4010
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5BDE77C6
+P 5930 3430
+F 0 "R2" H 6000 3476 50  0000 L CNN
+F 1 "2k" H 6000 3385 50  0000 L CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5860 3430 50  0001 C CNN
+F 3 "~" H 5930 3430 50  0001 C CNN
+	1    5930 3430
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5BDE7832
+P 5930 2230
+F 0 "R1" H 6000 2276 50  0000 L CNN
+F 1 "2k" H 6000 2185 50  0000 L CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5860 2230 50  0001 C CNN
+F 3 "~" H 5930 2230 50  0001 C CNN
+	1    5930 2230
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5BDE78B2
+P 6410 1840
+F 0 "R3" H 6480 1886 50  0000 L CNN
+F 1 "240R" H 6480 1795 50  0000 L CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6340 1840 50  0001 C CNN
+F 3 "~" H 6410 1840 50  0001 C CNN
+	1    6410 1840
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C7
+U 1 1 5BDE7AA3
+P 6410 2350
+F 0 "C7" H 6498 2396 50  0000 L CNN
+F 1 "10µF/25V" H 6420 2270 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D5.0mm_P2.00mm" H 6410 2350 50  0001 C CNN
+F 3 "~" H 6410 2350 50  0001 C CNN
+	1    6410 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C9
+U 1 1 5BDE7AF7
+P 7050 2220
+F 0 "C9" H 7138 2266 50  0000 L CNN
+F 1 "1µF (Tantalum)" H 7138 2175 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_Tantal_D5.0mm_P5.00mm" H 7050 2220 50  0001 C CNN
+F 3 "~" H 7050 2220 50  0001 C CNN
+	1    7050 2220
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D7
+U 1 1 5BDE7ED0
+P 7900 2600
+F 0 "D7" V 7938 2483 50  0000 R CNN
+F 1 "LED" V 7847 2483 50  0000 R CNN
+F 2 "LEDs:LED_D3.0mm" H 7900 2600 50  0001 C CNN
+F 3 "~" H 7900 2600 50  0001 C CNN
+	1    7900 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D8
+U 1 1 5BDE7F67
+P 7900 3050
+F 0 "D8" V 7938 2933 50  0000 R CNN
+F 1 "LED" V 7847 2933 50  0000 R CNN
+F 2 "LEDs:LED_D3.0mm" H 7900 3050 50  0001 C CNN
+F 3 "~" H 7900 3050 50  0001 C CNN
+	1    7900 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5BDE8005
+P 7900 2240
+F 0 "R5" H 7970 2286 50  0000 L CNN
+F 1 "2k" H 7970 2195 50  0000 L CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7830 2240 50  0001 C CNN
+F 3 "~" H 7900 2240 50  0001 C CNN
+	1    7900 2240
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5BDE8066
+P 7900 3410
+F 0 "R6" H 7970 3456 50  0000 L CNN
+F 1 "2k" H 7970 3365 50  0000 L CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7830 3410 50  0001 C CNN
+F 3 "~" H 7900 3410 50  0001 C CNN
+	1    7900 3410
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3210 3010 3210 2840
+Wire Wire Line
+	4500 2740 4500 2830
+Wire Wire Line
+	4910 2830 4910 2740
+Wire Wire Line
+	5280 2690 5280 2830
+$Comp
+L Device:C_Small C5
+U 1 1 5BDEFDD3
+P 5280 2590
+F 0 "C5" H 5372 2636 50  0000 L CNN
+F 1 "100nF" H 5280 2520 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 5280 2590 50  0001 C CNN
+F 3 "~" H 5280 2590 50  0001 C CNN
+	1    5280 2590
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 5BDF2334
+P 3360 2620
+F 0 "D1" H 3360 2540 50  0000 C CNN
+F 1 "RL202" H 3360 2710 50  0000 C CNN
+F 2 "Diodes_ThroughHole:D_DO-15_P5.08mm_Vertical_AnodeUp" H 3360 2620 50  0001 C CNN
+F 3 "~" H 3360 2620 50  0001 C CNN
+	1    3360 2620
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D3
+U 1 1 5BDF23A1
+P 3660 2620
+F 0 "D3" H 3660 2540 50  0000 C CNN
+F 1 "RL202" H 3660 2710 50  0000 C CNN
+F 2 "Diodes_ThroughHole:D_DO-15_P5.08mm_Vertical_AnodeUp" H 3660 2620 50  0001 C CNN
+F 3 "~" H 3660 2620 50  0001 C CNN
+	1    3660 2620
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D4
+U 1 1 5BDF23FF
+P 3660 3010
+F 0 "D4" H 3660 2930 50  0000 C CNN
+F 1 "RL202" H 3660 3100 50  0000 C CNN
+F 2 "Diodes_ThroughHole:D_DO-15_P5.08mm_Vertical_AnodeUp" H 3660 3010 50  0001 C CNN
+F 3 "~" H 3660 3010 50  0001 C CNN
+	1    3660 3010
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D2
+U 1 1 5BDF2468
+P 3360 3010
+F 0 "D2" H 3360 2930 50  0000 C CNN
+F 1 "RL202" H 3360 3100 50  0000 C CNN
+F 2 "Diodes_ThroughHole:D_DO-15_P5.08mm_Vertical_AnodeUp" H 3360 3010 50  0001 C CNN
+F 3 "~" H 3360 3010 50  0001 C CNN
+	1    3360 3010
+	-1   0    0    1   
+$EndComp
+Connection ~ 4500 2830
+Connection ~ 4910 2830
+Wire Wire Line
+	4500 2830 4910 2830
+Wire Wire Line
+	4910 2830 5280 2830
+$Comp
+L Device:CP C2
+U 1 1 5BDF4E9B
+P 4500 3080
+F 0 "C2" H 4618 3126 50  0000 L CNN
+F 1 "2200µF" H 4500 2990 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D16.0mm_P7.50mm" H 4538 2930 50  0001 C CNN
+F 3 "~" H 4500 3080 50  0001 C CNN
+	1    4500 3080
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C4
+U 1 1 5BDF4EA1
+P 4910 3080
+F 0 "C4" H 5028 3126 50  0000 L CNN
+F 1 "2200µF" H 4910 2990 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D16.0mm_P7.50mm" H 4948 2930 50  0001 C CNN
+F 3 "~" H 4910 3080 50  0001 C CNN
+	1    4910 3080
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 2930 4500 2830
+Wire Wire Line
+	4910 2830 4910 2930
+$Comp
+L Device:C_Small C6
+U 1 1 5BDF4EAA
+P 5280 3070
+F 0 "C6" H 5372 3116 50  0000 L CNN
+F 1 "100nF" H 5280 3000 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 5280 3070 50  0001 C CNN
+F 3 "~" H 5280 3070 50  0001 C CNN
+	1    5280 3070
+	1    0    0    -1  
+$EndComp
+Connection ~ 5280 2830
+Wire Wire Line
+	5280 2830 5930 2830
+Connection ~ 5930 2830
+$Comp
+L Device:R_POT_TRIM RV2
+U 1 1 5BDFCB27
+P 5930 2610
+F 0 "RV2" H 6120 2540 50  0000 R CNN
+F 1 "100R" V 5850 2710 50  0000 R CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3266P" H 5930 2610 50  0001 C CNN
+F 3 "~" H 5930 2610 50  0001 C CNN
+	1    5930 2610
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV3
+U 1 1 5BDFCF29
+P 5930 3060
+F 0 "RV3" H 6120 2990 50  0000 R CNN
+F 1 "100R" V 5850 3160 50  0000 R CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3266P" H 5930 3060 50  0001 C CNN
+F 3 "~" H 5930 3060 50  0001 C CNN
+	1    5930 3060
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5930 3710 5930 3640
+$Comp
+L power:GNDREF #PWR01
+U 1 1 5BE04B08
+P 2740 2830
+F 0 "#PWR01" H 2740 2580 50  0001 C CNN
+F 1 "GNDREF" H 2745 2657 50  0000 C CNN
+F 2 "" H 2740 2830 50  0001 C CNN
+F 3 "" H 2740 2830 50  0001 C CNN
+	1    2740 2830
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2740 2830 2520 2830
+Wire Wire Line
+	2520 2370 3510 2370
+Wire Wire Line
+	3510 2370 3510 2620
+Connection ~ 3510 2620
+Wire Wire Line
+	2520 3300 3510 3300
+Wire Wire Line
+	3510 3300 3510 3010
+Connection ~ 3510 3010
+Wire Wire Line
+	2520 3300 2520 3080
+Wire Wire Line
+	2520 2370 2520 2580
+Wire Wire Line
+	3210 2840 3070 2840
+Connection ~ 3210 2840
+Wire Wire Line
+	3210 2840 3210 2620
+Wire Wire Line
+	3810 2620 3810 2820
+Wire Wire Line
+	3810 2820 3960 2820
+Connection ~ 3810 2820
+Wire Wire Line
+	3810 2820 3810 3010
+$Comp
+L power:GNDREF #PWR02
+U 1 1 5BE0BA11
+P 4210 2830
+F 0 "#PWR02" H 4210 2580 50  0001 C CNN
+F 1 "GNDREF" H 4215 2657 50  0000 C CNN
+F 2 "" H 4210 2830 50  0001 C CNN
+F 3 "" H 4210 2830 50  0001 C CNN
+	1    4210 2830
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4210 2830 4500 2830
+Wire Wire Line
+	5930 1970 5930 2040
+Wire Wire Line
+	6410 1990 6410 2040
+Wire Wire Line
+	5930 2040 6410 2040
+Connection ~ 5930 2040
+Wire Wire Line
+	5930 2040 5930 2080
+Connection ~ 6410 2040
+Wire Wire Line
+	6410 2040 6410 2250
+Wire Wire Line
+	6410 2450 6410 2830
+Wire Wire Line
+	6410 2830 6180 2830
+Wire Wire Line
+	6230 1670 6410 1670
+Wire Wire Line
+	6410 1670 6410 1690
+Wire Wire Line
+	6080 2610 6180 2610
+Connection ~ 6180 2830
+Wire Wire Line
+	6180 2830 5930 2830
+Wire Wire Line
+	6080 3060 6180 3060
+$Comp
+L Device:R R4
+U 1 1 5BE339A2
+P 6410 3840
+F 0 "R4" H 6480 3886 50  0000 L CNN
+F 1 "240R" H 6480 3795 50  0000 L CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6340 3840 50  0001 C CNN
+F 3 "~" H 6410 3840 50  0001 C CNN
+	1    6410 3840
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C8
+U 1 1 5BE339A8
+P 6410 3370
+F 0 "C8" H 6498 3416 50  0000 L CNN
+F 1 "10µF/25V" H 6420 3300 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D5.0mm_P2.00mm" H 6410 3370 50  0001 C CNN
+F 3 "~" H 6410 3370 50  0001 C CNN
+	1    6410 3370
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6410 3690 6410 3640
+Wire Wire Line
+	5930 3640 6410 3640
+Connection ~ 6410 3640
+Wire Wire Line
+	6410 3640 6410 3470
+Wire Wire Line
+	6230 4010 6410 4010
+Wire Wire Line
+	6410 4010 6410 3990
+Connection ~ 5930 3640
+Wire Wire Line
+	5930 3640 5930 3580
+Wire Wire Line
+	6410 2830 6410 3270
+Connection ~ 6410 2830
+Wire Wire Line
+	6180 2610 6180 2830
+Wire Wire Line
+	5930 2760 5930 2830
+Wire Wire Line
+	5930 3210 5930 3280
+Wire Wire Line
+	5930 2830 5930 2910
+Wire Wire Line
+	6180 2830 6180 3060
+Wire Wire Line
+	5930 2460 5930 2380
+Wire Wire Line
+	7050 2320 7050 2830
+Wire Wire Line
+	7050 2830 6410 2830
+$Comp
+L Device:CP_Small C10
+U 1 1 5BE4B631
+P 7050 3460
+F 0 "C10" H 7138 3506 50  0000 L CNN
+F 1 "1µF (Tantalum)" H 7138 3415 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_Tantal_D5.0mm_P5.00mm" H 7050 3460 50  0001 C CNN
+F 3 "~" H 7050 3460 50  0001 C CNN
+	1    7050 3460
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 2830 7050 3360
+Connection ~ 7050 2830
+Wire Wire Line
+	5280 2970 5280 2830
+Wire Wire Line
+	4910 3230 4500 3230
+Connection ~ 4910 3230
+Wire Wire Line
+	4910 3230 5280 3230
+Wire Wire Line
+	5280 2440 5280 2490
+Wire Wire Line
+	4500 2440 4910 2440
+Connection ~ 4910 2440
+Wire Wire Line
+	4910 2440 5280 2440
+Wire Wire Line
+	7050 4010 7900 4010
+Wire Wire Line
+	7900 4010 7900 3560
+Wire Wire Line
+	7900 3260 7900 3200
+Wire Wire Line
+	7900 2750 7900 2830
+Wire Wire Line
+	7050 2830 7900 2830
+Connection ~ 7900 2830
+Wire Wire Line
+	7900 2830 7900 2900
+Wire Wire Line
+	7900 2390 7900 2450
+$Comp
+L power:+12V #PWR03
+U 1 1 5BEA3188
+P 8640 1670
+F 0 "#PWR03" H 8640 1520 50  0001 C CNN
+F 1 "+12V" V 8655 1798 50  0000 L CNN
+F 2 "" H 8640 1670 50  0001 C CNN
+F 3 "" H 8640 1670 50  0001 C CNN
+	1    8640 1670
+	0    1    1    0   
+$EndComp
+$Comp
+L power:-12V #PWR05
+U 1 1 5BEA3230
+P 8650 4010
+F 0 "#PWR05" H 8650 4110 50  0001 C CNN
+F 1 "-12V" V 8665 4138 50  0000 L CNN
+F 2 "" H 8650 4010 50  0001 C CNN
+F 3 "" H 8650 4010 50  0001 C CNN
+	1    8650 4010
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDREF #PWR04
+U 1 1 5BEA32F6
+P 8540 2870
+F 0 "#PWR04" H 8540 2620 50  0001 C CNN
+F 1 "GNDREF" H 8545 2697 50  0000 C CNN
+F 2 "" H 8540 2870 50  0001 C CNN
+F 3 "" H 8540 2870 50  0001 C CNN
+	1    8540 2870
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8540 2870 8540 2830
+Wire Wire Line
+	8540 2830 8340 2830
+Connection ~ 7900 4010
+Wire Wire Line
+	7900 1670 8540 1670
+Wire Wire Line
+	6410 4010 7050 4010
+Wire Wire Line
+	7050 3560 7050 4010
+Connection ~ 6410 4010
+Connection ~ 7050 4010
+Wire Wire Line
+	6080 4370 6410 4370
+Wire Wire Line
+	6410 4370 6410 4010
+Wire Wire Line
+	5280 4370 5280 4010
+Wire Wire Line
+	5280 4370 5780 4370
+Wire Wire Line
+	5280 3170 5280 3230
+Wire Wire Line
+	5280 3230 5280 4010
+Connection ~ 5280 3230
+Connection ~ 5280 4010
+Wire Wire Line
+	5280 4010 5630 4010
+Wire Wire Line
+	5280 2440 5280 1670
+Connection ~ 5280 2440
+Connection ~ 5280 1670
+Wire Wire Line
+	5280 1670 5630 1670
+Wire Wire Line
+	5280 1300 5280 1670
+Wire Wire Line
+	5280 1300 5780 1300
+Wire Wire Line
+	6410 1300 6410 1670
+Wire Wire Line
+	6080 1300 6410 1300
+Connection ~ 6410 1670
+Wire Wire Line
+	7900 1670 7900 2090
+Wire Wire Line
+	7050 1670 7050 2120
+Wire Wire Line
+	6410 1670 7050 1670
+Connection ~ 7050 1670
+Wire Wire Line
+	7050 1670 7900 1670
+Connection ~ 7900 1670
+$Comp
+L Transformer:TRANSF6 TR1
+U 1 1 5BEEC5FB
+P 2120 2880
+F 0 "TR1" H 2120 3362 50  0000 C CNN
+F 1 "VPT30-830" H 2120 3271 50  0000 C CNN
+F 2 "footprints:Transformer_Toroidal_D74.0mm" H 2120 2880 50  0001 C CNN
+F 3 "" H 2120 2880 50  0001 C CNN
+	1    2120 2880
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2320 2780 2520 2780
+Wire Wire Line
+	2520 2780 2520 2830
+Wire Wire Line
+	2520 2830 2520 2880
+Wire Wire Line
+	2520 2880 2320 2880
+Connection ~ 2520 2830
+Wire Wire Line
+	2320 2580 2520 2580
+Wire Wire Line
+	2320 3080 2520 3080
+Wire Wire Line
+	3960 2820 3960 2440
+Wire Wire Line
+	3960 2440 4500 2440
+Connection ~ 4500 2440
+Wire Wire Line
+	3070 2840 3070 3230
+Wire Wire Line
+	3070 3230 4500 3230
+Connection ~ 4500 3230
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J1
+U 1 1 5BF12507
+P 9360 2850
+F 0 "J1" H 9410 3367 50  0000 C CNN
+F 1 "Conn_02x08_Odd_Even" H 9410 3276 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_2x08_Pitch2.54mm" H 9360 2850 50  0001 C CNN
+F 3 "~" H 9360 2850 50  0001 C CNN
+	1    9360 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9160 3150 9160 3050
+Wire Wire Line
+	9160 3050 9160 2950
+Connection ~ 9160 3050
+Wire Wire Line
+	9660 2950 9660 3050
+Wire Wire Line
+	9660 3050 9660 3150
+Connection ~ 9660 3050
+Wire Wire Line
+	7900 4010 8540 4010
+Connection ~ 8540 4010
+Wire Wire Line
+	8540 3250 9160 3250
+Wire Wire Line
+	8540 3250 8540 4010
+Wire Wire Line
+	9660 3150 9770 3150
+Wire Wire Line
+	9770 3150 9770 3430
+Wire Wire Line
+	9770 3430 9030 3430
+Wire Wire Line
+	9030 3430 9030 3150
+Wire Wire Line
+	9030 3150 9160 3150
+Connection ~ 9660 3150
+Connection ~ 9160 3150
+Wire Wire Line
+	9660 3250 9660 3360
+Wire Wire Line
+	9660 3360 9160 3360
+Wire Wire Line
+	9160 3360 9160 3250
+Connection ~ 9160 3250
+Wire Wire Line
+	8540 2570 8880 2570
+Wire Wire Line
+	8880 2570 8880 2850
+Wire Wire Line
+	8880 2850 8990 2850
+Connection ~ 8540 1670
+Wire Wire Line
+	8540 1670 8640 1670
+Wire Wire Line
+	8540 1670 8540 2570
+Wire Wire Line
+	8990 2850 8990 1990
+Wire Wire Line
+	8990 1990 9810 1990
+Wire Wire Line
+	9810 1990 9810 2850
+Wire Wire Line
+	9810 2850 9660 2850
+Connection ~ 8990 2850
+Wire Wire Line
+	8990 2850 9160 2850
+Wire Wire Line
+	9160 2750 9040 2750
+Wire Wire Line
+	9040 2750 9040 2090
+Wire Wire Line
+	9040 2090 9770 2090
+Wire Wire Line
+	9770 2090 9770 2750
+Wire Wire Line
+	9770 2750 9660 2750
+Wire Wire Line
+	9160 2650 9080 2650
+Wire Wire Line
+	9080 2650 9080 2190
+Wire Wire Line
+	9080 2190 9730 2190
+Wire Wire Line
+	9730 2190 9730 2650
+Wire Wire Line
+	9730 2650 9660 2650
+Wire Wire Line
+	9160 2550 9160 2240
+Wire Wire Line
+	9160 2240 9660 2240
+Wire Wire Line
+	9660 2240 9660 2550
+Wire Wire Line
+	9030 3150 8340 3150
+Wire Wire Line
+	8340 3150 8340 2830
+Connection ~ 9030 3150
+Connection ~ 8340 2830
+Wire Wire Line
+	8340 2830 7900 2830
+Wire Wire Line
+	8540 4010 8650 4010
+$EndSCHEMATC
