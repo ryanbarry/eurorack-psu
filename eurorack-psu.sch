@@ -83,23 +83,23 @@ $EndComp
 $Comp
 L Device:R R2
 U 1 1 5BDE77C6
-P 5930 3430
-F 0 "R2" H 6000 3476 50  0000 L CNN
-F 1 "2k" H 6000 3385 50  0000 L CNN
-F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5860 3430 50  0001 C CNN
-F 3 "~" H 5930 3430 50  0001 C CNN
-	1    5930 3430
+P 6410 3430
+F 0 "R2" H 6480 3476 50  0000 L CNN
+F 1 "2k" H 6480 3385 50  0000 L CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6340 3430 50  0001 C CNN
+F 3 "~" H 6410 3430 50  0001 C CNN
+	1    6410 3430
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R1
 U 1 1 5BDE7832
-P 5930 2230
-F 0 "R1" H 6000 2276 50  0000 L CNN
-F 1 "2k" H 6000 2185 50  0000 L CNN
-F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5860 2230 50  0001 C CNN
-F 3 "~" H 5930 2230 50  0001 C CNN
-	1    5930 2230
+P 6410 2230
+F 0 "R1" H 6480 2276 50  0000 L CNN
+F 1 "2k" H 6480 2185 50  0000 L CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6340 2230 50  0001 C CNN
+F 3 "~" H 6410 2230 50  0001 C CNN
+	1    6410 2230
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -116,12 +116,12 @@ $EndComp
 $Comp
 L Device:CP_Small C7
 U 1 1 5BDE7AA3
-P 6410 2350
-F 0 "C7" H 6498 2396 50  0000 L CNN
-F 1 "10µF/25V" H 6420 2270 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:CP_Radial_D5.0mm_P2.00mm" H 6410 2350 50  0001 C CNN
-F 3 "~" H 6410 2350 50  0001 C CNN
-	1    6410 2350
+P 5930 2390
+F 0 "C7" H 6018 2436 50  0000 L CNN
+F 1 "10µF/25V" H 5940 2310 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D5.0mm_P2.00mm" H 5930 2390 50  0001 C CNN
+F 3 "~" H 5930 2390 50  0001 C CNN
+	1    5930 2390
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -286,29 +286,26 @@ F 3 "~" H 5280 3070 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 5280 2830
-Wire Wire Line
-	5280 2830 5930 2830
-Connection ~ 5930 2830
 $Comp
 L Device:R_POT_TRIM RV2
 U 1 1 5BDFCB27
-P 5930 2610
-F 0 "RV2" H 6120 2540 50  0000 R CNN
-F 1 "100R" V 5850 2710 50  0000 R CNN
-F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3266P" H 5930 2610 50  0001 C CNN
-F 3 "~" H 5930 2610 50  0001 C CNN
-	1    5930 2610
+P 6410 2610
+F 0 "RV2" H 6600 2540 50  0000 R CNN
+F 1 "100R" V 6330 2710 50  0000 R CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3266P" H 6410 2610 50  0001 C CNN
+F 3 "~" H 6410 2610 50  0001 C CNN
+	1    6410 2610
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_POT_TRIM RV3
 U 1 1 5BDFCF29
-P 5930 3060
-F 0 "RV3" H 6120 2990 50  0000 R CNN
-F 1 "100R" V 5850 3160 50  0000 R CNN
-F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3266P" H 5930 3060 50  0001 C CNN
-F 3 "~" H 5930 3060 50  0001 C CNN
-	1    5930 3060
+P 6410 3060
+F 0 "RV3" H 6600 2990 50  0000 R CNN
+F 1 "100R" V 6330 3160 50  0000 R CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3266P" H 6410 3060 50  0001 C CNN
+F 3 "~" H 6410 3060 50  0001 C CNN
+	1    6410 3060
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -373,25 +370,13 @@ Wire Wire Line
 	5930 2040 6410 2040
 Connection ~ 5930 2040
 Wire Wire Line
-	5930 2040 5930 2080
-Connection ~ 6410 2040
-Wire Wire Line
-	6410 2040 6410 2250
-Wire Wire Line
-	6410 2450 6410 2830
-Wire Wire Line
-	6410 2830 6180 2830
-Wire Wire Line
 	6230 1670 6410 1670
 Wire Wire Line
 	6410 1670 6410 1690
 Wire Wire Line
-	6080 2610 6180 2610
-Connection ~ 6180 2830
+	6560 2610 6660 2610
 Wire Wire Line
-	6180 2830 5930 2830
-Wire Wire Line
-	6080 3060 6180 3060
+	6560 3060 6660 3060
 $Comp
 L Device:R R4
 U 1 1 5BE339A2
@@ -406,47 +391,36 @@ $EndComp
 $Comp
 L Device:CP_Small C8
 U 1 1 5BE339A8
-P 6410 3370
-F 0 "C8" H 6498 3416 50  0000 L CNN
-F 1 "10µF/25V" H 6420 3300 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:CP_Radial_D5.0mm_P2.00mm" H 6410 3370 50  0001 C CNN
-F 3 "~" H 6410 3370 50  0001 C CNN
-	1    6410 3370
+P 5930 3300
+F 0 "C8" H 6018 3346 50  0000 L CNN
+F 1 "10µF/25V" H 5940 3230 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D5.0mm_P2.00mm" H 5930 3300 50  0001 C CNN
+F 3 "~" H 5930 3300 50  0001 C CNN
+	1    5930 3300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6410 3690 6410 3640
 Wire Wire Line
 	5930 3640 6410 3640
-Connection ~ 6410 3640
-Wire Wire Line
-	6410 3640 6410 3470
 Wire Wire Line
 	6230 4010 6410 4010
 Wire Wire Line
 	6410 4010 6410 3990
-Connection ~ 5930 3640
 Wire Wire Line
-	5930 3640 5930 3580
+	6410 3640 6410 3580
 Wire Wire Line
-	6410 2830 6410 3270
-Connection ~ 6410 2830
+	6660 2610 6660 2830
 Wire Wire Line
-	6180 2610 6180 2830
+	6410 3210 6410 3280
 Wire Wire Line
-	5930 2760 5930 2830
+	6660 2830 6660 3060
 Wire Wire Line
-	5930 3210 5930 3280
-Wire Wire Line
-	5930 2830 5930 2910
-Wire Wire Line
-	6180 2830 6180 3060
-Wire Wire Line
-	5930 2460 5930 2380
+	6410 2460 6410 2380
 Wire Wire Line
 	7050 2320 7050 2830
 Wire Wire Line
-	7050 2830 6410 2830
+	7050 2830 6660 2830
 $Comp
 L Device:CP_Small C10
 U 1 1 5BE4B631
@@ -583,7 +557,7 @@ U 1 1 5BEEC5FB
 P 2120 2880
 F 0 "TR1" H 2120 3362 50  0000 C CNN
 F 1 "VPT30-830" H 2120 3271 50  0000 C CNN
-F 2 "footprints:Transformer_Toroidal_D74.0mm" H 2120 2880 50  0001 C CNN
+F 2 "footprints:Transformer_Toroidal_D74.0mm_OffBoardMount" H 2120 2880 50  0001 C CNN
 F 3 "" H 2120 2880 50  0001 C CNN
 	1    2120 2880
 	1    0    0    -1  
@@ -716,4 +690,23 @@ Wire Wire Line
 	8340 2830 7900 2830
 Wire Wire Line
 	8540 4010 8650 4010
+Wire Wire Line
+	5280 2830 5930 2830
+Wire Wire Line
+	5930 3200 5930 2830
+Connection ~ 5930 2830
+Wire Wire Line
+	5930 3400 5930 3640
+Connection ~ 5930 3640
+Connection ~ 6410 3640
+Connection ~ 6660 2830
+Wire Wire Line
+	5930 2830 6660 2830
+Wire Wire Line
+	5930 2040 5930 2290
+Wire Wire Line
+	5930 2490 5930 2830
+Wire Wire Line
+	6410 2040 6410 2080
+Connection ~ 6410 2040
 $EndSCHEMATC
